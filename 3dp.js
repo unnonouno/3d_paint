@@ -8,5 +8,5 @@ angular.module("App", [])
 
   $window.addEventListener('devicemotion', function(e) {
     $scope.x = e.acceleration.x * 10;
-  }
+  })
 });
