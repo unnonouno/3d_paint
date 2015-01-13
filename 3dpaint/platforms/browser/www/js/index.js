@@ -43,7 +43,9 @@ var app = {
                 $("#img3").css('left', x * 6 + 'px');
                 $("#img4").css('left', x * 12 + 'px');
                 $("#img5").css('left', x * 20 + 'px');
-                $("#acc").text(x);
+                $("#acc").text(acceleration.x + ', ' +
+                               acceleration.y + ', ' +
+                               acceleration.z);
             },
             function() {
                 alert('error');
