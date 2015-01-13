@@ -1,0 +1,6 @@
+#base {
+  position: relative;
+}
+#base img {
+  position: absolute;
+}
