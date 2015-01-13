@@ -5,4 +5,8 @@ angular.module("App", [])
     $scope.x = $event.offsetX - $event.target.clientWidth * 0.5;
     $scope.y = $event.offsetY - $event.target.clientHeight * 0.5;
   }
+
+  $window.addEventListener('devicemotion', function(e) {
+    $scope.x = e.acceleration.x * 10;
+  }
 });
