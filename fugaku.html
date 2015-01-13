@@ -6,6 +6,9 @@
 <link href="3dp.css" rel="stylesheet" type="text/css">
 </head>
 <body ng-app="App">
+<div>
+<span>{{x}}</span>
+</div>
 <div ng-controller="mainController">
 <div id="base" ng-mousemove="on_move($event)">
 <img src="The_Great_Wave_off_Kanagawa_0.png" ng-style="{'left': (-x*0.00)+'px', 'top': (-y*0.00)+'px'}">
