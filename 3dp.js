@@ -7,6 +7,7 @@ angular.module("App", [])
   };
 
   $window.addEventListener('devicemotion', function(e) {
+      alert(e.acceleration);
     $scope.x = e.acceleration.x * 10;
   });
 }]);
