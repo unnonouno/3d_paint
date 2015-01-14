@@ -6,13 +6,8 @@ angular.module("App", [])
     $scope.y = $event.offsetY - $event.target.clientHeight * 0.5;
   };
 
-  if ($window.DeviceMotionEvent) {
-  } else {
-    alert("not supported");
-  }
-
   $window.addEventListener('devicemotion', function(e) {
-      alert(e.acceleration);
-    $scope.x = e.acceleration.x * 10;
+    alert(e.accelerationIncludingGravity.x);
+    $scope.x = e.accelerationIncludingGravity.x * 10;
   });
 }]);
