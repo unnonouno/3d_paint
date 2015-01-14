@@ -6,7 +6,8 @@ angular.module("App", [])
     $scope.y = $event.offsetY - $event.target.clientHeight * 0.5;
   };
 
+  var scope = $scope;
   $window.addEventListener('devicemotion', function(e) {
-    $scope.x = e.accelerationIncludingGravity.x * 10;
+    scope.x = e.accelerationIncludingGravity.x * 10;
   });
 }]);
