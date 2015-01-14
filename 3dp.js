@@ -21,7 +21,7 @@ angular.module("App", [])
       y += $scope.ys[i];
     }
     $scope.xs[3] = -e.accelerationIncludingGravity.x * 100.0;
-    $scope.ys[3] = -e.accelerationIncludingGravity.y * 100.0;
+    $scope.ys[3] = e.accelerationIncludingGravity.y * 100.0;
 
     x += $scope.xs[3];
     y += $scope.ys[3];
